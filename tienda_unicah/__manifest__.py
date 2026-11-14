@@ -4,9 +4,12 @@
 "summary": "Convenios de descuento para la tienda universitaria", 
 "category": "Sales/Sales", 
 "author": "Nombre del estudiante", 
-"depends": ["sale_management"], 
+"depends": ["base", "sale_management", "sale"], 
 "data": [ 
-"views/res_partner_views.xml", 
-], 
+        "security/ir.access.csv", 
+        "data/tienda_convenio_data.xml", 
+        "views/res_partner_views.xml", 
+        "views/tienda_convenio_views.xml", 
+    ], 
 "license": "LGPL-3", 
 }
